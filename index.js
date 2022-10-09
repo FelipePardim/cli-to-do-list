@@ -21,13 +21,13 @@ program
 program
  .command('mark-done')
  .description('Mark a TODO task as done')
- .option('-t, --tasks <tasks...>', 'The tasks to mark done. If not specified, all tasks will be marked done.')
+ .option('-t, --tasks, <tasks...>', 'The tasks to mark done. If not specified, all tasks will be marked done.')
  .action(markDone)
 
  program
  .command('remove')
  .description('Remove a tasks from TODO list')
- .option('-t, --tasks <tasks...>', 'The tasks to remove. If not specified, all tasks will be removed.')
+ .option('-t, --tasks, <tasks...>', 'The tasks to remove. If not specified, all tasks will be removed.')
  .action(remove)
 
 program.parse()
